@@ -1,57 +1,64 @@
-# 🌐 Taynara Souza  
-### Systems Developer | Web Development & Intelligent Automations  
+# Taynara Souza — Portfólio
 
-Este repositório contém o código do meu portfólio profissional, desenvolvido para apresentar minhas habilidades técnicas, experiências e projetos focados em **desenvolvimento web moderno e automação de processos**.
+> Portfólio profissional desenvolvido com React, TypeScript e Tailwind CSS — apresentando projetos, habilidades e trajetória.
 
-Mais do que um site institucional, este projeto reflete minha forma de trabalhar: organização, clareza estrutural, foco em experiência do usuário e código escalável.
+![Status](https://img.shields.io/badge/status-online-22c55e)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38bdf8?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/build-Vite-646CFF?logo=vite)
+![License](https://img.shields.io/badge/license-MIT-green)
 
----
+🌐 **[Ver online](https://portfolio-seven-olive-48.vercel.app/)**
 
-## 🚀 Live Preview  
+## Visão do Projeto
 
-🔗 https://portfolio-seven-olive-48.vercel.app/
+Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e trajetória profissional. Construído com as tecnologias modernas do ecossistema React, com foco em performance, acessibilidade e design limpo.
 
----
+### O que o projeto apresenta
 
-## 💼 Professional Focus  
+- Projetos desenvolvidos com links e descrições.
+- Stack técnica e habilidades.
+- Formulário de contato.
+- Design responsivo com animações suaves.
 
-### I work with:
+## Stack Técnica
 
-- Modern and responsive Front-end development  
-- Structured and scalable applications  
-- Process automation and system integrations  
-- Clean UI with strong usability principles  
+- **Framework:** React 18
+- **Linguagem:** TypeScript
+- **Estilo:** Tailwind CSS
+- **Build:** Vite
+- **Deploy:** Vercel
 
-### Currently open to:
+## Estrutura do Projeto
 
-- Front-end Developer opportunities  
-- Junior Full Stack roles  
-- Freelance projects (Web & Automations)  
+```text
+.
+├─ src/
+│  ├─ components/     ← componentes React
+│  ├─ pages/          ← páginas da aplicação
+│  ├─ assets/         ← imagens e ícones
+│  └─ main.tsx        ← entry point
+├─ public/
+├─ index.html
+├─ vite.config.ts
+├─ tailwind.config.ts
+└─ tsconfig.json
+```
 
----
+## Como Executar
 
-## 🛠 Tech Stack  
+```bash
+npm install
+npm run dev
+```
 
-- React  
-- TypeScript  
-- Tailwind CSS  
-- Vite  
-- Vercel (Deployment)  
-- Git & GitHub  
+Acesse: `http://localhost:5173`
 
----
+## Deploy
 
-## ⚙️ Technical Highlights  
+Conecte o repositório ao [Vercel](https://vercel.com) — deploy automático a cada push na branch `main`.
 
-- Component-based architecture  
-- Clean and maintainable code  
-- Responsive design  
-- Version control best practices  
-- Deployment-ready structure  
-- Continuous improvement mindset  
+## Licença
 
----
-
-## 📬 Contact  
-
-📧 taynara.souza.dev@gmail.com  
+MIT — veja [LICENSE](./LICENSE)
