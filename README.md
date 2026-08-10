@@ -9,7 +9,7 @@
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?logo=vite)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-🌐 **[Ver online](https://portfolio-seven-olive-48.vercel.app/)**
+🌐 **[Ver online](https://taynarasouza.vercel.app/)**
 
 ## Visão do Projeto
 
@@ -19,7 +19,8 @@ Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e traje
 
 - Projetos desenvolvidos com links e descrições.
 - Stack técnica e habilidades.
-- Formulário de contato.
+- Trajetória profissional e formação.
+- Contato por links diretos (e-mail e redes) — não há formulário de envio.
 - Design responsivo com animações suaves.
 
 ## Stack Técnica
@@ -35,16 +36,25 @@ Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e traje
 ```text
 .
 ├─ src/
-│  ├─ components/     ← componentes React
-│  ├─ pages/          ← páginas da aplicação
-│  ├─ assets/         ← imagens e ícones
-│  └─ main.tsx        ← entry point
-├─ public/
+│  ├─ components/     ← Header, Hero, About, Skills, Experience, Projects, Contact, Footer
+│  ├─ lib/            ← cliente Supabase (presente, mas não utilizado hoje)
+│  ├─ App.tsx         ← composição das seções em página única
+│  ├─ main.tsx        ← entry point
+│  └─ index.css       ← Tailwind + estilos globais
 ├─ index.html
 ├─ vite.config.ts
-├─ tailwind.config.ts
-└─ tsconfig.json
+├─ tailwind.config.js
+├─ postcss.config.js
+├─ eslint.config.js
+└─ tsconfig.json · tsconfig.app.json · tsconfig.node.json
 ```
+
+É uma página única: `App.tsx` empilha as seções de `components/`. Não há roteamento nem pasta `public/`.
+
+## Pré-requisitos
+
+- **Node.js `^20.19.0` ou `>=22.12.0`** — exigência do Vite 7
+- npm 10+
 
 ## Como Executar
 
@@ -55,9 +65,20 @@ npm run dev
 
 Acesse: `http://localhost:5173`
 
+Demais scripts:
+
+| Comando | O que faz |
+|---|---|
+| `npm run build` | Build de produção em `dist/` |
+| `npm run preview` | Serve o build local para conferência |
+| `npm run lint` | ESLint em todo o projeto |
+| `npm run typecheck` | `tsc --noEmit` sobre `tsconfig.app.json` |
+
 ## Deploy
 
-Conecte o repositório ao [Vercel](https://vercel.com) — deploy automático a cada push na branch `main`.
+Publicado na **Vercel** em [taynarasouza.vercel.app](https://taynarasouza.vercel.app/), com deploy automático a cada push na `main`.
+
+O repositório também tem **GitHub Pages** habilitado, servindo a mesma aplicação em `taysouzaa.github.io/Taynara.Souza/`. A Vercel é o endereço oficial; o Pages é secundário.
 
 ## Licença
 
