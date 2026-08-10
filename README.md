@@ -11,7 +11,9 @@
 
 🌐 **[Ver online](https://taynarasouza.vercel.app/)**
 
-## Visão do Projeto
+> **Estado:** ativo · **Última revisão:** 2026-08-10
+
+## Visão geral
 
 Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e trajetória profissional. Construído com as tecnologias modernas do ecossistema React, com foco em performance, acessibilidade e design limpo.
 
@@ -23,7 +25,7 @@ Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e traje
 - Contato por links diretos (e-mail e redes) — não há formulário de envio.
 - Design responsivo com animações suaves.
 
-## Stack Técnica
+## Stack
 
 - **Framework:** React 18
 - **Linguagem:** TypeScript
@@ -31,7 +33,7 @@ Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e traje
 - **Build:** Vite
 - **Deploy:** Vercel
 
-## Estrutura do Projeto
+## Estrutura do projeto
 
 ```text
 .
@@ -56,7 +58,7 @@ Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e traje
 - **Node.js `^20.19.0` ou `>=22.12.0`** — exigência do Vite 7
 - npm 10+
 
-## Como Executar
+## Rodar local
 
 ```bash
 npm install
