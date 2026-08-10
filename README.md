@@ -39,7 +39,6 @@ Portfólio pessoal desenvolvido para apresentar projetos, stack técnica e traje
 .
 ├─ src/
 │  ├─ components/     ← Header, Hero, About, Skills, Experience, Projects, Contact, Footer
-│  ├─ lib/            ← cliente Supabase (presente, mas não utilizado hoje)
 │  ├─ App.tsx         ← composição das seções em página única
 │  ├─ main.tsx        ← entry point
 │  └─ index.css       ← Tailwind + estilos globais
