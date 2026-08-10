@@ -7,7 +7,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)
 ![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38bdf8?logo=tailwindcss)
 ![Vite](https://img.shields.io/badge/build-Vite-646CFF?logo=vite)
-![License](https://img.shields.io/badge/license-MIT-green)
+![Licença](https://img.shields.io/badge/licença-proprietária-red)
 
 🌐 **[Ver online](https://taynarasouza.vercel.app/)**
 
@@ -84,4 +84,4 @@ O repositório também tem **GitHub Pages** habilitado, servindo a mesma aplica�
 
 ## Licença
 
-MIT — veja [LICENSE](./LICENSE)
+Licença proprietária — todos os direitos reservados. O código pode ser lido para avaliação profissional ou estudo; qualquer reuso, cópia, modificação ou uso comercial exige autorização prévia e por escrito da autora. Ver [LICENSE](./LICENSE).
