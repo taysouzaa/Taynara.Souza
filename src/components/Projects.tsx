@@ -1,38 +1,46 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Lock } from 'lucide-react';
+
+type Project = {
+  title: string;
+  description: string;
+  tech: string[];
+  gradient: string;
+  link: string;
+  /** Repositório público. Ausente quando o código é privado (cliente/NDA). */
+  code?: string;
+};
 
 export default function Projects() {
-  const projects = [
+  const projects: Project[] = [
     {
       title: 'Sistema R.O.E.',
       description: 'Sistema automatizado para registro, categorização e encaminhamento de ocorrências escolares, com armazenamento em Google Sheets e notificações automáticas via Gmail API.',
       tech: ['n8n', 'Google Sheets', 'Gmail API', 'OAuth2'],
       gradient: 'from-blue-600 to-cyan-500',
       link: 'https://registro-roe.vercel.app/',
-      code: 'https://github.com/taysouzaa/Registro.roe/blob/main/index.html'
+      code: 'https://github.com/taysouzaa/Registro.roe'
     },
     {
-      title: 'SPI-P4',
-      description: 'Sistema SaaS para padronização e otimização de imagens para marketplaces como Amazon, Mercado Livre e Shopee, com processamento em lote, fila assíncrona e histórico persistente.',
-      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Canvas API'],
+      title: 'SPI',
+      description: 'SaaS que padroniza imagens de produto para 6 marketplaces. O processamento acontece no navegador via Canvas API, então a imagem original nunca sai da máquina do cliente. Fila assíncrona e histórico persistente.',
+      tech: ['React', 'TypeScript', 'Node.js', 'Prisma', 'AWS', 'Canvas API'],
       gradient: 'from-blue-600 to-indigo-500',
       link: 'https://imagens-spi.vercel.app/',
-      code: 'https://github.com/taysouzaa/SPI-P4/blob/main/README.md'
+      code: 'https://github.com/taysouzaa/spi-showcase'
     },
     {
       title: 'P4Calculator',
       description: 'Aplicação web de Business Intelligence para e-commerce, focada em precificação, margem de contribuição e cálculo de ROAS, com histórico persistente e integração via webhook (n8n).',
       tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
       gradient: 'from-indigo-600 to-purple-500',
-      link: 'https://p4-calculator.vercel.app/',
-      code: 'https://github.com/taysouzaa/P4Calculator/blob/main/README.md'
+      link: 'https://p4-calculator.vercel.app/'
     },
-    { 
+    {
       title: 'Rota do Capacete',
       description: 'Plataforma web desenvolvida para apresentação e organização do projeto Rota do Capacete, com foco em experiência do usuário, navegação intuitiva e estrutura escalável.',
       tech: ['HTML', 'CSS', 'JavaScript'],
       gradient: 'from-blue-600 to-cyan-500',
-      link: 'https://rotadocapacete.com.br/',
-      code: 'https://github.com/taysouzaa/RotadoCapacete/blob/main/README.md'
+      link: 'https://rotadocapacete.com.br/'
     }
   ];
 
@@ -87,15 +95,25 @@ export default function Projects() {
                     <ExternalLink size={16} />
                     Ver Projeto
                   </a>
-                  <a
-                    href={project.code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors font-medium"
-                  >
-                    <Github size={16} />
-                    Código
-                  </a>
+                  {project.code ? (
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-slate-800 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors font-medium"
+                    >
+                      <Github size={16} />
+                      Código
+                    </a>
+                  ) : (
+                    <span
+                      className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-slate-800/50 text-gray-500 dark:text-gray-500 rounded-lg font-medium border border-dashed border-gray-300 dark:border-slate-700 cursor-default"
+                      title="Código proprietário do cliente — repositório privado"
+                    >
+                      <Lock size={16} />
+                      Repositório privado
+                    </span>
+                  )}
                 </div>
               </div>
 

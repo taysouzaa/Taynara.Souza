@@ -17,8 +17,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'E-mail',
-      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=taynara.souza.dev@gmail.com',
-      username: 'taynara.souza.dev@gmail.com'
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=souza.codes@gmail.com',
+      username: 'souza.codes@gmail.com'
 }
   ];
 
@@ -69,7 +69,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=taynara.souza.dev@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=souza.codes@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-all shadow-md"
