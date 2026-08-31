@@ -16,7 +16,7 @@ export default function Footer() {
     },
     { 
       icon: Mail, 
-      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=taynara.souza.dev@gmail.com', 
+      href: 'https://mail.google.com/mail/?view=cm&fs=1&to=souza.codes@gmail.com', 
       label: 'E-mail' 
     }
   ];
