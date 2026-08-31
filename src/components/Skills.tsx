@@ -29,10 +29,12 @@ export default function Skills() {
     icon: Database,
     title: 'Banco de Dados',
     skills: [
-      'SQL Server',
-      'MySQL',
-      'Modelagem de Dados',
-      'Estrutura Relacional'
+      'PostgreSQL',
+      'Supabase',
+      'Prisma ORM',
+      'Row Level Security',
+      'AWS DynamoDB',
+      'Modelagem de Dados'
     ]
   },
   {
