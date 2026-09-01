@@ -4,7 +4,7 @@ export default function Experience() {
   const experiences = [
     {
     icon: Briefcase,
-    period: '2026 - Presente',
+    period: 'Jan/2026 - Presente',
     title: 'Programadora Júnior',
     company: 'Método P4',
     description:
@@ -23,7 +23,7 @@ export default function Experience() {
 },
   {
     icon: Briefcase,
-    period: '2026 - Presente',
+    period: 'Presente',
     title: 'Full Stack Developer',
     company: 'Atuação Independente | Projetos para Empresas',
     description:
@@ -38,6 +38,22 @@ export default function Experience() {
       'Docker',
       'Google Cloud',
       'n8n',
+      'Git'
+    ]
+  },
+  {
+    icon: Briefcase,
+    period: 'Out/2025 - Jan/2026',
+    title: 'Estagiária em Desenvolvimento',
+    company: 'Método P4',
+    description:
+      'Início da atuação na empresa, apoiando o desenvolvimento de páginas, integrações e as primeiras automações de processo. Período em que passei a acompanhar a operação de perto, entendendo as regras de negócio que mais tarde viraram os sistemas internos.',
+    tech: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'n8n',
+      'Integração de APIs',
       'Git'
     ]
   },
