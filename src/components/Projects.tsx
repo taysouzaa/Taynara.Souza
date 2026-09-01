@@ -18,7 +18,7 @@ export default function Projects() {
       tech: ['n8n', 'Google Sheets', 'Gmail API', 'OAuth2'],
       gradient: 'from-blue-600 to-cyan-500',
       link: 'https://registro-roe.vercel.app/',
-      code: 'https://github.com/taysouzaa/Registro.roe'
+      code: 'https://github.com/taysouzaa/registro-roe'
     },
     {
       title: 'SPI',
