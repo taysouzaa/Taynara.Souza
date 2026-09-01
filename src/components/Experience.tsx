@@ -14,7 +14,8 @@ export default function Experience() {
     'Node.js',
     'APIs REST',
     'n8n',
-    'SQL Server',
+    'Supabase',
+    'PostgreSQL',
     'Integração de Sistemas',
     'Arquitetura de Software',
     'Automação de Processos'
@@ -33,7 +34,7 @@ export default function Experience() {
       'Node.js',
       'Python',
       'APIs REST',
-      'SQL Server',
+      'PostgreSQL',
       'Docker',
       'Google Cloud',
       'n8n',
