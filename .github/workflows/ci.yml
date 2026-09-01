@@ -1,0 +1,58 @@
+name: CI
+
+# Roda a verificacao do portfolio a cada push e a cada pull request na main.
+#
+# O que cada passo protege:
+#   typecheck  o build usa esbuild, que so remove os tipos. Erro de tipo e
+#              identificador nao resolvido passam batido no `vite build`.
+#   build      alem de compilar, executa o prerender: se o App quebrar ao rodar
+#              no Node (uso de window/document fora de useEffect, por exemplo),
+#              a falha aparece aqui e nao numa pagina em branco em producao.
+#   prerender  confere que o HTML final tem conteudo de verdade. Sem esta
+#              checagem, uma regressao no prerender.mjs entregaria uma div vazia
+#              silenciosamente — que era o estado anterior do site.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web:
+    name: Typecheck, build e prerender
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
+
+      - name: Conferir que o prerender produziu conteudo
+        run: |
+          tamanho=$(wc -c < dist/index.html)
+          echo "dist/index.html: $tamanho bytes"
+          if [ "$tamanho" -lt 20000 ]; then
+            echo "index.html pequeno demais — o prerender provavelmente nao rodou"
+            exit 1
+          fi
+          grep -q "Desenvolvedora Full Stack" dist/index.html \
+            || { echo "conteudo esperado ausente do HTML estatico"; exit 1; }
